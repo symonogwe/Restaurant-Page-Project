@@ -1,0 +1,22 @@
+
+:root {
+  --base-color: #fb8500;
+  --sub-base-color: #023047;
+  --sub-color: #219ebc;
+  --text-color: #8ecae6;
+  --base-p-fs: calc(0.5rem + 0.6vw);
+  --base-header-fs: calc(2rem + 2vw);
+  --logo-width: max(20px, 10%);
+  --base-header-ff: "Bebas Neue", sans-serif;
+  --base-paragraph-ff: "League Spartan", sans-serif;
+  --base-margin: 0.3em 0em;
+  --box-shadow: 5px 10px 30px black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+
