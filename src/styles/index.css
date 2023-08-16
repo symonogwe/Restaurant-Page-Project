@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
 :root {
   --base-color: #fb8500;
@@ -6,17 +8,72 @@
   --text-color: #8ecae6;
   --base-p-fs: calc(0.5rem + 0.6vw);
   --base-header-fs: calc(2rem + 2vw);
-  --logo-width: max(20px, 10%);
-  --base-header-ff: "Bebas Neue", sans-serif;
-  --base-paragraph-ff: "League Spartan", sans-serif;
+  --logo-width: max(30px, 15%);
+  --base-header-ff: "Caprasimo", sans-serif;
+  --base-paragraph-ff: "Comfortaa", sans-serif;
   --base-margin: 0.3em 0em;
   --box-shadow: 5px 10px 30px black;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+
+}
+
+#main {
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000814;
+  height: 5%;
+}
+
+.header-icon {
+  width: 15%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.logo-icon {
+  width: var(--logo-width);
+  justify-self: center;
+  filter: invert(54%) sepia(80%) saturate(479%) hue-rotate(145deg) brightness(84%) contrast(84%);
+}
+
+.header-links {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.header-links > a {
+  text-decoration: none;
+  font-size: calc(.9rem + 1vw);
+  color: var(--text-color);
+}
+
+.header-links > a:hover {
+  border-bottom: 2px solid var(--base-color);
+}
+/* HOME MAIN CONTENT */
+.main-content {
+  height: 95%;
+  background: url(/src/assets/shawnanggg-nmpW_WwwVSc-unsplash.jpg) no-repeat center center/cover;
+}
+
+.home-heading {
+  border: 2px solid red;
+}
+
   
 
