@@ -6,8 +6,8 @@
   --sub-base-color: #023047;
   --sub-color: #219ebc;
   --text-color: #8ecae6;
-  --base-p-fs: calc(0.5rem + 0.6vw);
-  --base-header-fs: calc(2rem + 2vw);
+  --base-p-fs: calc(1rem + 1vw);
+  --base-header-fs: calc(3rem + 3vw);
   --logo-width: max(30px, 15%);
   --base-header-ff: "Caprasimo", sans-serif;
   --base-paragraph-ff: "Comfortaa", sans-serif;
@@ -34,6 +34,7 @@ header {
   justify-content: space-between;
   background-color: #000814;
   height: 5%;
+  position: relative;
 }
 
 .header-icon {
@@ -68,12 +69,54 @@ header {
 /* HOME MAIN CONTENT */
 .main-content {
   height: 95%;
-  background: url(/src/assets/shawnanggg-nmpW_WwwVSc-unsplash.jpg) no-repeat center center/cover;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url(/src/assets/shawnanggg-nmpW_WwwVSc-unsplash.jpg) no-repeat center center/cover;
 }
 
 .home-heading {
-  border: 2px solid red;
+  /* border: 2px solid red; */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  height: 45%;
 }
+
+.home-h1 {
+  color: var(--base-color);
+  font-family: var(--base-header-ff);
+  font-size: var(--base-header-fs);
+  opacity: .9;
+}
+
+.home-heading > .home-p {
+  font-size: var(--base-p-fs);
+  font-family: var(--base-paragraph-ff);
+  color: aliceblue;
+  text-align: center;
+  max-width: 40ch;
+  opacity: .8;
+}
+
+.home-order-btn {
+  padding: .8em 3em;
+  background-color: var(--base-color);
+  border: none;
+  color: aliceblue;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 2em;
+  font-family: var(--base-paragraph-ff);
+  font-size: calc(.6rem + .4vw);
+}
+
+
 
   
 
