@@ -9,7 +9,7 @@ module.exports = {
           directory: path.join(__dirname, "dist"),
         },
         compress: true,
-        port: 9000,
+        port: 3000,
         open: true,
         hot: true
     },
@@ -24,6 +24,7 @@ module.exports = {
         filename: "bundle.js",
         path: path.resolve(__dirname, "dist"),
         clean: true,
+        assetModuleFilename: "[name] [ext]",
     },
     module: {
         rules: [

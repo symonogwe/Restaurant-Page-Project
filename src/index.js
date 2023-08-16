@@ -1,7 +1,13 @@
 import "./styles/index.css";
-import icon from "./assets/restaurant-952.svg";
+import createHome from "./home";
+import icon from "./assets/restaurant-952.svg"
 
-const logoIcon = document.querySelector(".logo-icon");
-logoIcon.src = icon;
+// Select the icon and set its src
+const pageIcon = document.querySelector(".logo-icon");
+pageIcon.src = icon;
 
-console.log(123);
+// Select the main-content div and append content
+// const mainContent = document.querySelector(".main-content");
+// mainContent.append(createHome());
+
+createHome();
