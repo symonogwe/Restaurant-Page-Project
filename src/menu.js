@@ -18,7 +18,7 @@ export default function createMenu() {
     menuContainer.classList.add("menu-container");
 
     // create 6 menu cards
-    for(let i = 1; i <= 6; i++) {
+    for(let i = 1; i <= 9; i++) {
         let menuCard = document.createElement("div");
         menuCard.classList.add("menu-card", `menu-${i}`);
 
@@ -69,6 +69,27 @@ export default function createMenu() {
    menu6Text.textContent = "Drinks";
    menu6Text.classList.add("menu-h2");
    menu6.append(menu6Text);
+
+   // seventh menu
+   const menu7 = menuCards.item(6);
+   let menu7Text = document.createElement("h2");
+   menu7Text.textContent = "Deserts";
+   menu7Text.classList.add("menu-h2");
+   menu7.append(menu7Text);
+
+   // eighth menu
+   const menu8 = menuCards.item(7);
+   let menu8Text = document.createElement("h2");
+   menu8Text.textContent = "Pizzas";
+   menu8Text.classList.add("menu-h2");
+   menu8.append(menu8Text);
+
+   // sixth menu
+   const menu9 = menuCards.item(8);
+   let menu9Text = document.createElement("h2");
+   menu9Text.textContent = "soups";
+   menu9Text.classList.add("menu-h2");
+   menu9.append(menu9Text);
 
    console.log(menu1);
 
