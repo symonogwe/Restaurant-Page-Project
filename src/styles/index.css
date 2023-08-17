@@ -57,13 +57,15 @@ header {
   align-items: center;
 }
 
-.header-links > a {
-  text-decoration: none;
-  font-size: calc(.9rem + 1vw);
+
+
+.header-link{
   color: var(--text-color);
+  cursor: pointer;
+  font-size: calc(.9rem + 1vw);
 }
 
-.header-links > a:hover {
+.header-link:hover {
   border-bottom: 2px solid var(--base-color);
 }
 /* HOME MAIN CONTENT */
@@ -115,7 +117,6 @@ header {
   font-family: var(--base-paragraph-ff);
   font-size: calc(.6rem + .4vw);
 }
-
 
 
   

@@ -1,7 +1,16 @@
 
+// function that removes child elements
+function removeAllChildNodes(parent) {
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
+}
+
 export default function createMenu() {
     // select the main div
     const mainDiv = document.querySelector(".main-content");
+
+    removeAllChildNodes(mainDiv);
 
     // create menu page elements
     const menuContainer = document.createElement("div");
