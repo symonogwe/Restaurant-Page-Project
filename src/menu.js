@@ -31,7 +31,7 @@ export default function createMenu() {
    // firstChild
    const menu1 = menuCards.item(0);
    menu1.textContent = "hello";
-   menu1.classList.add("home-h1")
+   menu1.classList.add("home-h1");
 
    console.log(menu1);
 
