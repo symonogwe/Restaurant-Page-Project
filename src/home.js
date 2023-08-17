@@ -1,7 +1,16 @@
 
+// function that removes child elements
+function removeAllChildNodes(parent) {
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
+}
+
 export default function createHome() {
     // select the main div
     const mainDiv = document.querySelector(".main-content");
+
+    removeAllChildNodes(mainDiv);
 
     // create homePage elements
     const homeHeading = document.createElement("div");

@@ -6,6 +6,7 @@ function removeAllChildNodes(parent) {
     }
 }
 
+// function that creates menu page
 export default function createMenu() {
     // select the main div
     const mainDiv = document.querySelector(".main-content");
@@ -23,6 +24,16 @@ export default function createMenu() {
 
         menuContainer.append(menuCard);
     }
+
+    // select all menu cards
+   const menuCards = menuContainer.children;
+
+   // firstChild
+   const menu1 = menuCards.item(0);
+   menu1.textContent = "hello";
+   menu1.classList.add("home-h1")
+
+   console.log(menu1);
 
     return mainDiv.append(menuContainer);
 }
