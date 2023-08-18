@@ -91,7 +91,5 @@ export default function createMenu() {
    menu9Text.classList.add("menu-h2");
    menu9.append(menu9Text);
 
-   console.log(menu1);
-
     return mainDiv.append(menuContainer);
 }
