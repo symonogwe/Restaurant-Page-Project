@@ -237,6 +237,7 @@ footer {
   display: flex;
   justify-content: center;
   opacity: .8;
+  border: 1px solid #fb8500;
 }
 
 .social-icons-container {
