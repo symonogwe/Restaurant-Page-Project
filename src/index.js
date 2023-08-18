@@ -20,12 +20,13 @@ menuLink.addEventListener("click", createMenu);
 const contactLink = document.getElementById("contact-link");
 contactLink.addEventListener("click", createContact);
 
-// call the createHome function
-createHome();
-
 // footer icons
 const githubIcon = document.querySelector(".social-icon-1");
 githubIcon.src = github;
 
 const twitterIcon = document.querySelector(".social-icon-2");
 twitterIcon.src = twitter;
+
+
+// call the createHome function
+createHome();
